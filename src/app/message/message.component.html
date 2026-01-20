@@ -1,0 +1,38 @@
+<!-- <div style="display:flex"> -->
+<!-- <p>message works!</p> -->
+ <!-- <div> -->
+<div style="display:flex;position: relative;margin: auto; background-color: rgb(255, 163, 158);
+             width: 400px; height: 60px; border-radius: 10px 10px 0 0;">
+  <h2 style="position: absolute;color: white; left:25px;bottom: -5px">秘 密 訊 息</h2>
+  <div style="position: absolute; background-color: rgb(251, 101, 101);width: 30px; height: 30px;border-radius: 10px;
+             right:15px; top:10px;text-align: center">
+    <label style="position: absolute; color: white;top:4px; right:9px">✕</label>
+  </div>
+  <div style="position: absolute; background-color: rgb(251, 101, 101);width: 30px; height: 30px;border-radius: 10px;
+             right:55px; top:10px;text-align: center">
+    <label style="position: absolute; color: white;top:4px; right:9px">♡</label>
+  </div>
+</div>
+<div style="position: relative; margin: auto; background-color: rgb(255, 241, 206);width: 400px;height: 350px;">
+  <br><br>
+  <div style="position:absolute; left: 25px;">
+    <!-- @if(userName!= undefined){} -->
+    <!-- @else{ -->
+    <label>暱稱&nbsp;&nbsp;&nbsp; : &nbsp;</label><input  type:string [(ngModel)]="userName"><br><br>
+    <label>E-mail : &nbsp;</label><input  type:string [(ngModel)]="userEmail"><br><br>
+    <label>留言&nbsp;&nbsp;&nbsp; : &nbsp;</label>
+    <textarea style="position: absolute; height: 150px;align-items: flex-start;resize: none; width: 275px;
+                     border-radius: 5px; border: none; background-color: rgb(255, 250, 243);"
+              type:string [(ngModel)]="userMessage"></textarea><br><br>
+  <!-- } -->
+    <button style="position: absolute;width: 60px; height: 30px; bottom: -165px;left: 150px;
+                   background-color: rgb(255, 163, 158);color: white;font-size: 14px;
+                   border-radius: 5px; border: none;" (click)="sendData()">送 出</button>
+  </div>
+</div>
+<!-- </div> -->
+
+<div>
+<!-- <app-send [userName]="userName" [userEmail]="userEmail" [userMessage]="userMessage"></app-send> -->
+<!-- </div>
+</div> -->

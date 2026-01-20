@@ -1,0 +1,14 @@
+<!-- <p>dialog works!</p> -->
+
+<!-- dialog標題 -->
+ <h2 mat-dialog-title style="background-color: rgb(152, 144, 159);height:60px; color: white;">標題</h2>
+ <!-- dialog內容 -->
+  <mat-dialog-content >
+    <br>
+  <p>訊息{{data}}</p>
+</mat-dialog-content>
+<!-- dialog按鈕 -->
+ <mat-dialog-actions>
+  <button style="margin-right: 10px;border-radius: 10px;" (click)="cancel()">取消</button>
+  <button style="border-radius: 10px" (click)="certain()">確定</button>
+ </mat-dialog-actions>

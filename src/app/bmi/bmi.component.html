@@ -1,0 +1,23 @@
+<div style="text-align: center;margin:auto; background-color:rgb(187, 219, 221);
+              padding:10px; width:350px; height: 190px;position: relative;
+              border-radius: 10px; border: 2px solid rgb(69, 92, 94)">
+  <p style="position: absolute; background-color: rgb(250, 229, 202); color: rgb(13, 61, 106);
+              font-size: 18px; width: 160px; height: 30px; right:105px; border-radius: 10px; font-weight: bold">BMI計算器
+  </p>
+  <br><br><br><br>
+  <label>體重(kg) : </label> <input [(ngModel)]="weight">
+  <br><br>
+  <label>身高(m) : </label> <input [(ngModel)]="height">
+  <br><br>
+  <button style="width: 100px;background-color: antiquewhite; color: rgb(13, 61, 106);
+                   border: 2px solid rgb(69, 92, 94); border-radius: 10px;"
+    (click)="calculateBMI(weight,height)">計算</button>
+  <br>
+  <!-- <label style="color: white;font-size: 24px;">-------------------------------------------</label> -->
+
+</div>
+<div style="width:380px;text-align: center;margin:auto; background-color: rgb(255, 244, 230);
+              height: 65px;border-radius: 10px; ">
+  <p>{{health}}</p>
+  <p>{{standard}}</p>
+</div>

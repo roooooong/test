@@ -1,0 +1,51 @@
+button{
+  font-size: 14px;
+  margin: 9px;
+  width: 80px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(234, 249, 255);
+  border: none;
+}
+
+//氣象 按鈕
+.b3{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  border-radius: 0;
+  margin: 0px;
+
+}
+
+//地區hover
+.hv:hover{
+background-color: rgb(148, 202, 246);
+color:white;
+}
+
+//地區 按下去的效果
+.hv4{
+background-color: rgb(64, 141, 203);
+color:white;
+}
+
+//氣象 hover
+.hv3:hover{
+border-bottom: 2px solid rgb(110, 185, 246);
+color:rgb(141, 184, 228);
+}
+
+//下半部氣相框 hover
+.hv5:hover{
+border-bottom: 2px solid rgb(110, 185, 246);
+color:rgb(141, 184, 228);
+}
+
+.weather:hover{
+// border-bottom: 2px  solid rgb(204, 232, 255);
+height: 125px;
+box-shadow: 2px 2px 5px rgba(85, 172, 196, 0.5);
+// transition: transform 0.3s ease;
+    // transform: scale(1);
+}

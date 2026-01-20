@@ -1,0 +1,137 @@
+<p>first works!</p>
+<router-outlet></router-outlet>
+<label>使用者名稱 : {{userName}}</label><br>
+<label>使用者E-mail : {{userEmail}}</label><br>
+<label>使用者年紀 : {{userAge}}</label><br>
+<button (click)="back()">返回</button>
+
+<h3>{{inputData2}}</h3>
+
+<!-- id是這個標籤的身分證號碼 同一個HTML裡id的值不可重複 -->
+<!-- <canvas id="chart"></canvas> -->
+
+@for(data of chartArray; track $index ){
+  <canvas id="{{data.id}}"></canvas>
+}
+<!-- angular的select -->
+<!-- <mat-form-field>
+  <mat-label>Select an option</mat-label>
+  <mat-select [(value)]="selected">
+    <mat-option>None</mat-option>
+    <mat-option value="option1">Option 1</mat-option>
+    <mat-option value="option2">Option 2</mat-option>
+    <mat-option value="option3">Option 3</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p>You selected: {{selected}}</p> -->
+
+<!-- html的select寫法 -->
+<!-- 給使用者看得畫面和接收資料到後來可能不一樣 可以在option裡設value給值 -->
+<!-- <select [(ngModel)] = "selectAnimal">
+  <option value="A">Dog</option>
+  <option value="B">Cat</option>
+  <option value="C">Bear</option>
+  <option value="D">Rabbit</option>
+  <option value="E">Dear</option>
+</select> -->
+
+<!-- 把一組json資料換成下拉式選項 -->
+<!-- <select [(ngModel)] = "selectAnimal">
+  @for(animal of selectArray; track $index){
+    <option [value]="animal.value">{{animal.name}}</option>
+  }
+</select>
+
+<p>選了{{selectAnimal}}</p> -->
+
+<br><br><br><br>
+<!-- angular material -->
+<!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="settings"></mat-icon> -->
+
+
+<div>
+  <!-- 及時搜尋 -->
+  <input [(ngModel)]="inputData" (keyup)="inputKeyup()">
+  <table mat-table [dataSource]="dataSource">
+
+    <!-- Position Column -->
+
+    <!-- matColumnDef 要對應到TS中的displayedColumns這個全域變數的的內容
+     html中的matColumnDef後面的ID在TS中的displayedColumns一定要有 -->
+    <ng-container matColumnDef="ID">
+
+      <!-- 設定Table的標題名稱 -->
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+
+      <!-- *matCellDef="let element" 是類似for迴圈將資料一筆一筆撈取， 這裡的element是index -->
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="position">
+
+      <!-- 設定Table的標題名稱 -->
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+
+      <!-- *matCellDef="let element" 是類似for迴圈將資料一筆一筆撈取， 這裡的element是index -->
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="weight">
+      <th mat-header-cell *matHeaderCellDef> Weight </th>
+      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef> Symbol </th>
+      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+  </mat-paginator>
+</div>
+
+<!-- html的日期寫法 -->
+&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 130px; height: 30px;font-size: 14px;" type="date" [(ngModel)]="day"
+  min="2026-01-14">
+<!-- <h3>使用者日期: {{this.day2[0]}}-{{this.day2[1]}}-{{this.day2[2]}}</h3> -->
+<!-- <h3>使用者日期: {{day[0]}}{{day[1]}}{{day[2]}}</h3> -->
+<h3>使用者日期: {{day}}</h3>
+
+
+<!-- angular material寫法 -->
+<mat-form-field>
+  <mat-label>Choose a date</mat-label>
+  <!-- picker是綁定ID  寫兩個的話 另一個的變數要改-->
+  <input matInput [matDatepicker]="picker" min="2026-01-14">
+  <!-- 提示訊息 -->
+  <mat-hint>MM/DD/YYYY</mat-hint>
+  <!-- matIconSuffix icon放前面 ; matIconprefix icon放後面 -->
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+<!-- <h3 [ngClass]="{'h3Css': booleanData ==true, 'h3Css2': booleanData ==false}">Allen</h3> -->
+<h3 [ngClass]="test()">Allen</h3>
+
+<button [ngClass]="test()" (click)="chandgNgClass()">觸發ngClass</button>
+
+
+<mat-tab-group>
+  <mat-tab label="First"> Content 1 </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>

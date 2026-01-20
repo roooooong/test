@@ -1,0 +1,137 @@
+<!-- 切換頁面的 routerLink="" 每個標籤都可以使用
+ 但通常用<a></a>超連結 OR <button></button>按鈕 使用者才知道-->
+
+<!-- routerLinkActive是點選後的變化 不常使用-->
+<!-- <a routerLink="/first" routerLinkActive="activeCss">First</a>
+<br>
+<a routerLink="/second" routerLinkActive="activeCss">Second</a> -->
+<!-- <button routerLink="/first">First</button> -->
+<!-- <router-outlet></router-outlet> -->
+
+<!-- TS方法 -->
+<!-- <button (click)="changePage()">First</button>
+ <router-outlet></router-outlet> -->
+
+<!-- <p>使用HTML routerLink 做觸發換頁</p>
+<a routerLink="/first">First Component</a>
+<br>
+<a routerLink="/second">Second Component</a>
+<br>
+<a routerLink="/first/child-a">Child-a Component</a>
+<br><br>
+<p>按鈕需使用TS做觸發換頁</p>
+<button (click)="changePage('/')">返回起始頁</button>
+<button style="margin:10px" (click)="changePage('/first')">First Component</button>
+<button (click)="changePage('/second')">Second Component</button>
+<button (click)="changePage('/first/child-a')">First Child Component</button>
+<router-outlet></router-outlet> -->
+
+<!-- <div style="width: 240px;height: 50px;background-color: antiquewhite;">
+<a style="margin:0 0 0 15px" routerLink="/resume">履歷</a>
+<a style="margin:0 0 0 15px" routerLink="/bmi">BMI計算器</a>
+<a style="margin:0 0 0 15px" routerLink="/level">角色升級</a>
+</div> -->
+
+<!-- 三個 -->
+<!-- <div style="height: 50px;">
+<button style="margin:10px 0 0 545px; width: 60px;" class="buttonCss"
+        routerLink="/resume" routerLinkActive="activeCss">履歷</button>
+<button style="margin:10px 0 0 20px; width: 120px;" class="buttonCss"
+        routerLink="/bmi" routerLinkActive="activeCss">BMI計算器</button>
+<button style="margin:10px 0 0 20px;  width: 100px;" class="buttonCss"
+        routerLink="/level" routerLinkActive="activeCss">角色升級</button>
+</div>
+<br>
+<router-outlet></router-outlet> -->
+
+<div style="height: 90px;">
+  <button style="margin:10px 0 0 20px; width: 60px;" class="buttonCss" routerLink="/login"
+    routerLinkActive="activeCss">登入</button>
+  <button style="margin:10px 0 0 20px; width: 60px;" class="buttonCss" routerLink="/resume"
+    routerLinkActive="activeCss">履歷</button>
+  <button style="margin:10px 0 0 20px; width: 120px;" class="buttonCss" routerLink="/bmi"
+    routerLinkActive="activeCss">BMI計算器</button>
+  <button style="margin:10px 0 0 20px;  width: 100px;" class="buttonCss" routerLink="/level"
+    routerLinkActive="activeCss">角色升級</button>
+  <button style="margin:10px 0 0 20px;  width: 100px;" class="buttonCss" routerLink="/message"
+    routerLinkActive="activeCss">秘密訊息</button>
+  <button style="margin:10px 0 0 20px;  width: 100px;" class="buttonCss" routerLink="/weather"
+    routerLinkActive="activeCss">天氣預報</button>
+</div>
+<br>
+<router-outlet></router-outlet>
+
+<!-- <button (click)="showDialog()">彈出dialog</button> -->
+<!-- <button (click)="showloading()">修改被訂閱的值</button> -->
+
+<!-- <label> 我是頁面A的內容 我訂閱了一個值 它的內容為:{{data}}></label> -->
+
+<!-- @if(loading){
+<mat-spinner></mat-spinner>
+<div class="overlay"></div>
+<router-outlet></router-outlet>
+} -->
+
+<!-- <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+  @for (link of links; track $index) {
+    <a mat-tab-link
+      (click)="activeLink = link.page"
+      routerLink="{{link.a}}"
+      [active]="activeLink == link.page"> {{link.page}} </a>
+  }
+</nav>
+<mat-tab-nav-panel #tabPanel>
+<router-outlet></router-outlet>
+</mat-tab-nav-panel> -->
+
+
+<!-- 側邊導航欄 -->
+<!-- <mat-drawer-container class="example-container" autosize> -->
+<!-- mat-drawer用來放側邊導航籃內的畫面 -->
+<!-- 沒有的話設mode的的話 預設是over -->
+<!-- <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    @if (showFiller) {
+    <p>Lorem, ipsum dolor sit amet consectetur.</p>
+    }
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content"> -->
+<!-- drawer2.toggle()是用來開啟側邊導航欄 -->
+<!-- 前面的drawer是對應到你在mat-drawer標籤中設定的ID -->
+<!-- <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div> -->
+
+<!-- 可以創多個導航欄 -->
+<!-- <mat-drawer #drawer2 class="example-sidenav" mode="side">
+  <h5>側邊導航欄2</h5>
+</mat-drawer>
+<div class="example-sidenav-content">
+  <button type="button" mat-button (click)="drawer2.toggle()">
+    Toggle2 sidenav
+  </button>
+</div>
+
+</mat-drawer-container> -->
+
+
+<!-- toolbar -->
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="example-spacer"></span>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>

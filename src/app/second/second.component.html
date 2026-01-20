@@ -1,0 +1,12 @@
+<!-- <p>second works!</p> -->
+<label>使用者名稱 : </label><input type:string [(ngModel)]="userName"><br>
+<label>使用者E-mail : </label><input type:string [(ngModel)]="userEmail"><br>
+<label>使用者年紀 : </label><input type:number [(ngModel)]="userAge"><br>
+<button (click)="sendData()">A頁面傳遞資料儲存按鈕</button>
+<br>
+<!-- 組件會因為你在組件的TS中全域變數前面加上@Input()而新增一個屬性繫結
+屬性繫結的名稱就是你的變數名稱 後面放的內容就會傳遞進去組建中 -->
+<app-first [inputData2]="userName"></app-first>
+
+
+

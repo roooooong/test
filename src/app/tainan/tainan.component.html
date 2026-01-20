@@ -1,0 +1,244 @@
+<!-- <p>tainan works!</p> -->
+
+<div style="background-color: rgb(34, 126, 201);margin: 0 50px 0 50px;border-radius: 30px 0 30px 0;height: 370px;">
+  <div>
+    <br>
+    <h2 style="font-size: 24px; color:rgb(255, 255, 255);bottom:50px;text-align: center;"> -&nbsp;&nbsp;臺南市各區&nbsp;&nbsp;-</h2>
+  </div>
+  <div>
+    <br><br><br><br>
+    <div style="position: relative;">
+      <div></div>
+      <div
+        style="top:-80px; position: absolute; width: 1010px; left:65px; padding:15px;background-color: rgb(255, 255, 255);border-radius:  30px ;">
+        <button class="hv" (click)="changeLocationName('新營區',0)" [ngClass]="testL(0)">新營區</button>
+        <button class="hv" (click)="changeLocationName('鹽水區',1)" [ngClass]="testL(1)">鹽水區</button>
+        <button class="hv" (click)="changeLocationName('白河區',2)" [ngClass]="testL(2)">白河區</button>
+        <button class="hv" (click)="changeLocationName('柳營區',3)" [ngClass]="testL(3)">柳營區</button>
+        <button class="hv" (click)="changeLocationName('後壁區',4)" [ngClass]="testL(4)">後壁區</button>
+        <button class="hv" (click)="changeLocationName('東山區',5)" [ngClass]="testL(5)">東山區</button>
+        <button class="hv" (click)="changeLocationName('麻豆區',6)" [ngClass]="testL(6)">麻豆區</button>
+        <button class="hv" (click)="changeLocationName('下營區',7)" [ngClass]="testL(7)">下營區</button>
+        <button class="hv" (click)="changeLocationName('六甲區',8)" [ngClass]="testL(8)">六甲區</button>
+        <button class="hv" (click)="changeLocationName('官田區',9)" [ngClass]="testL(9)">官田區</button>
+        <br>
+        <button class="hv" (click)="changeLocationName('大內區',10)" [ngClass]="testL(10)">大內區</button>
+        <button class="hv" (click)="changeLocationName('佳里區',11)" [ngClass]="testL(11)">佳里區</button>
+        <button class="hv" (click)="changeLocationName('學甲區',12)" [ngClass]="testL(12)">學甲區</button>
+        <button class="hv" (click)="changeLocationName('西港區',13)" [ngClass]="testL(13)">西港區</button>
+        <button class="hv" (click)="changeLocationName('七股區',14)" [ngClass]="testL(14)">七股區</button>
+        <button class="hv" (click)="changeLocationName('將軍區',15)" [ngClass]="testL(15)">將軍區</button>
+        <button class="hv" (click)="changeLocationName('北門區',16)" [ngClass]="testL(16)">北門區</button>
+        <button class="hv" (click)="changeLocationName('新化區',17)" [ngClass]="testL(17)">新化區</button>
+        <button class="hv" (click)="changeLocationName('善化區',18)" [ngClass]="testL(18)">善化區</button>
+        <button class="hv" (click)="changeLocationName('新市區',19)" [ngClass]="testL(19)">新市區</button>
+        <br>
+        <button class="hv" (click)="changeLocationName('安定區',20)" [ngClass]="testL(20)">安定區</button>
+        <button class="hv" (click)="changeLocationName('山上區',21)" [ngClass]="testL(21)">山上區</button>
+        <button class="hv" (click)="changeLocationName('玉井區',22)" [ngClass]="testL(22)">玉井區</button>
+        <button class="hv" (click)="changeLocationName('楠西區',23)" [ngClass]="testL(23)">楠西區</button>
+        <button class="hv" (click)="changeLocationName('南化區',24)" [ngClass]="testL(24)">南化區</button>
+        <button class="hv" (click)="changeLocationName('左鎮區',25)" [ngClass]="testL(25)">左鎮區</button>
+        <button class="hv" (click)="changeLocationName('仁德區',26)" [ngClass]="testL(26)">仁德區</button>
+        <button class="hv" (click)="changeLocationName('歸仁區',27)" [ngClass]="testL(27)">歸仁區</button>
+        <button class="hv" (click)="changeLocationName('關廟區',28)" [ngClass]="testL(28)">關廟區</button>
+        <button class="hv" (click)="changeLocationName('龍崎區',29)" [ngClass]="testL(29)">龍崎區</button>
+        <br>
+        <button class="hv" (click)="changeLocationName('永康區',30)" [ngClass]="testL(30)">永康區</button>
+        <button class="hv" (click)="changeLocationName('東區',31)" [ngClass]="testL(31)">東區</button>
+        <button class="hv" (click)="changeLocationName('南區',32)" [ngClass]="testL(32)">南區</button>
+        <button class="hv" (click)="changeLocationName('北區',33)" [ngClass]="testL(33)">北區</button>
+        <button class="hv" (click)="changeLocationName('安南區',34)" [ngClass]="testL(34)">安南區</button>
+        <button class="hv" (click)="changeLocationName('安平區',35)" [ngClass]="testL(35)">安平區</button>
+        <button class="hv" (click)="changeLocationName('中西區',36)" [ngClass]="testL(36)">中西區</button>
+      </div>
+
+      <br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+    <br>
+
+    <div style="position: relative;left: 170px; width: 1020px; height: 30px; padding:10px; border-radius: 20px; background-color: rgb(255, 255, 255); ">
+      <div style="position: absolute">
+        <button class="b3 hv3" style="width: 50px;" (click)="changeWeatherElement('溫度',0)"
+          [ngClass]="testW(0)">溫度</button>
+        <button class="b3 hv3" (click)="changeWeatherElement('露點溫度',1)" [ngClass]="testW(1)">露點溫度</button>
+        <button class="b3 hv3" (click)="changeWeatherElement('相對溼度',2)" [ngClass]="testW(2)">相對溼度</button>
+        <button class="b3 hv3" (click)="changeWeatherElement('體感溫度',3)" [ngClass]="testW(3)">體感溫度</button>
+        <button class="b3 hv3" style="width: 100px;" (click)="changeWeatherElement('舒適度指數',4)"
+          [ngClass]="testW(4)">舒適度指數</button>
+        <button class="b3 hv3" style="width: 50px;" (click)="changeWeatherElement('風速',5)"
+          [ngClass]="testW(5)">風速</button>
+        <button class="b3 hv3" style="width: 50px;" (click)="changeWeatherElement('風向',6)"
+          [ngClass]="testW(6)">風向</button>
+        <button class="b3 hv3" (click)="changeWeatherElement('3小時降雨機率',7)" style="width: 130px;"
+          [ngClass]="testW(7)">3小時降雨機率</button>
+        <button class="b3 hv3" (click)="changeWeatherElement('天氣現象',8)" [ngClass]="testW(8)">天氣現象</button>
+        <button class="b3 hv3" (click)="changeWeatherElement('天氣預報綜合描述',9)" style="width: 150px;"
+          [ngClass]="testW(9)">天氣預報綜合描述</button>
+      </div>
+    </div>
+
+    <!-- 上半部 -->
+
+    <hr style="background-color: rgba(34, 126, 201, 0.178);height:2px; ">
+
+    <div style="position: relative; display: flex;flex-wrap: wrap;margin: auto; justify-content: center">
+      @for(data of this.changeOption; track $index){
+
+      <!-- 溫度 -->
+      @if( this.option==0 ){
+      <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px 10px 0 0;height: 120px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.DataTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+        <p style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.DataTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.DataTime.replace('+','T').split('T')[1].split(':')[1]}}</p>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">{{WeatherElement}}&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-size: 26px;color: rgb(37, 157, 216); ">{{data.ElementValue[0].Temperature}}°</label>
+      </div>
+      }
+      <!-- 露點溫度 -->
+      @if( this.option==1 ){
+        <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px;height: 120px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.DataTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+        <p style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.DataTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.DataTime.replace('+','T').split('T')[1].split(':')[1]}}</p>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">{{WeatherElement}}&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-size: 26px;color: rgb(37, 157, 216); ">{{data.ElementValue[0].DewPoint}}°</label>
+      </div>
+      }
+      <!-- 相對溼度 -->
+      @if( this.option==2 ){
+         <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px;height: 120px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.DataTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+        <p style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.DataTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.DataTime.replace('+','T').split('T')[1].split(':')[1]}}</p>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">{{WeatherElement}}&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-size: 26px;color: rgb(37, 157, 216); ">{{data.ElementValue[0].RelativeHumidity}}%</label>
+      </div>
+      }
+      <!-- 體感溫度 -->
+      @if( this.option==3 ){
+        <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px;height: 120px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.DataTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+        <p style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.DataTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.DataTime.replace('+','T').split('T')[1].split(':')[1]}}</p>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">{{WeatherElement}}&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-size: 26px;color: rgb(37, 157, 216); " >{{data.ElementValue[0].ApparentTemperature}}°</label>
+      </div>
+      }
+      <!-- 舒適度指數 -->
+      @if( this.option==4 ){
+         <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px;height: 160px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.DataTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+        <p style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.DataTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.DataTime.replace('+','T').split('T')[1].split(':')[1]}}</p>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">{{WeatherElement}}&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-size: 26px;color: rgb(37, 157, 216); ">{{data.ElementValue[0].ComfortIndex}}</label>
+        <br><br>
+        <label style="font-weight: 550; text-align: center;width: 160px;  background-color: rgba(24, 112, 185, 0.721);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{data.ElementValue[0].ComfortIndexDescription}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      </div>
+      }
+      <!-- 風速 -->
+      @if( this.option==5 ){
+        <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px;height: 170px;width: 180px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.DataTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+        <p style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.DataTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.DataTime.replace('+','T').split('T')[1].split(':')[1]}}</p>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">蒲福氏風級&nbsp;|&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-size: 26px;color: rgb(37, 157, 216); ">{{data.ElementValue[0].BeaufortScale}} </label>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">級</label>
+        <br><br>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">{{WeatherElement}}&nbsp;|&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-size: 26px;color: rgb(37, 157, 216); ">{{data.ElementValue[0].WindSpeed}} </label>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">(m/s)</label>
+      </div>
+      }
+      <!-- 風向 -->
+      @if( this.option==6 ){
+        <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px;height: 110px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.DataTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+        <p style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.DataTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.DataTime.replace('+','T').split('T')[1].split(':')[1]}}</p>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">{{WeatherElement}}&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</label>
+        <label style="font-weight: 550; text-align: center;width: 160px; background-color: rgba(24, 112, 185, 0.721);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;{{data.ElementValue[0].WindDirection}}&nbsp;&nbsp;</label>
+      </div>
+      }
+      <!-- 3小時降雨機率 -->
+      @if( this.option==7 ){
+        <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px;height: 120px;width: 180px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.StartTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+          <br><br>
+        <label style="width: 160labelx; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.StartTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.StartTime.replace('+','T').split('T')[1].split(':')[1]}}</label>
+        <label style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">&nbsp;&nbsp;-&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.EndTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.EndTime.replace('+','T').split('T')[1].split(':')[1]}}</label>
+        <br><br>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">{{WeatherElement}}&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-size: 26px;color: rgb(37, 157, 216); ">{{data.ElementValue[0].ProbabilityOfPrecipitation}}%</label>
+      </div>
+      }
+      <!-- 天氣現象 -->
+      @if( this.option==8 ){
+        <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px;height: 110px;width: 180px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.StartTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+          <br><br>
+        <label style="width: 160labelx; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.StartTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.StartTime.replace('+','T').split('T')[1].split(':')[1]}}</label>
+        <label style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">&nbsp;&nbsp;-&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.EndTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.EndTime.replace('+','T').split('T')[1].split(':')[1]}}</label>
+        <br><br>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px; text-align: center;">{{WeatherElement}}&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</label>
+        <label style="font-weight: 550; text-align: center;width: 160px;  background-color: rgba(24, 112, 185, 0.721);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;{{data.ElementValue[0].Weather}}&nbsp;&nbsp;</label>
+      </div>
+      }
+      <!-- 天氣預報綜合描述 -->
+      @if( this.option==9 ){
+        <div style="text-align: center; background-color: rgba(63, 180, 230, 0.237);margin: 10px;padding: 10px; border-radius: 10px;height: 280px;width: 330px;">
+          <label
+          style="font-size:16px; background-color: rgba(34, 126, 201, 0.603);color: rgb(255, 255, 255);border-radius: 5px;">&nbsp;&nbsp;&nbsp;
+          {{data.StartTime.replace('+','T').split('T')[0]}}&nbsp;&nbsp;&nbsp;</label>
+          <br><br>
+        <label style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.StartTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.StartTime.replace('+','T').split('T')[1].split(':')[1]}}</label>
+        <label style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">&nbsp;&nbsp;-&nbsp;&nbsp;</label>
+        <label style="width: 160px; text-align: center;font-weight: 550; color: rgb(13, 54, 87);border-radius: 5px;font-size: 18px;">{{data.EndTime.replace('+','T').split('T')[1].split(':')[0]}} : {{data.EndTime.replace('+','T').split('T')[1].split(':')[1]}}</label>
+        <br><br>
+        <label style="font-size: 18px; font-weight: 700;color: rgb(6, 86, 151);width: 160px; text-align: center;">|&nbsp;&nbsp;{{WeatherElement}}&nbsp;&nbsp;|</label>
+
+        <!-- <ul>
+          <li style="font-weight: 550;color: rgb(13, 54, 87);width: 180px;">{{data.ElementValue[0].WeatherDescription.split('。')[0]}}，{{data.ElementValue[0].WeatherDescription.split('。')[1]}}。</li>
+          <br>
+          <li style="font-weight: 550;color: rgb(13, 54, 87);width: 200px;">{{data.ElementValue[0].WeatherDescription.split('。')[2]}}，{{data.ElementValue[0].WeatherDescription.split('。')[3]}}。</li>
+          <br>
+          <li style="font-weight: 550;color: rgb(13, 54, 87);width: 280px;">{{data.ElementValue[0].WeatherDescription.split('。')[4].split(' ')[0]}}，{{data.ElementValue[0].WeatherDescription.split('。')[4].split(' ')[1]}}。</li>
+          <br>
+          <li style="font-weight: 550;color: rgb(13, 54, 87);width: 160px;">{{data.ElementValue[0].WeatherDescription.split('。')[5]}}。</li>
+        </ul> -->
+
+        <br><br>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px;">{{data.ElementValue[0].WeatherDescription.split('。')[0]}}，{{data.ElementValue[0].WeatherDescription.split('。')[1]}}。</label>
+        <br><br>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px;">{{data.ElementValue[0].WeatherDescription.split('。')[2]}}，{{data.ElementValue[0].WeatherDescription.split('。')[3]}}。</label>
+        <br><br>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 180px;">{{data.ElementValue[0].WeatherDescription.split('。')[4].split(' ')[0]}}，{{data.ElementValue[0].WeatherDescription.split('。')[4].split(' ')[1]}}。</label>
+        <br><br>
+        <label style="font-weight: 550;color: rgb(13, 54, 87);width: 160px;">{{data.ElementValue[0].WeatherDescription.split('。')[5]}}。</label>
+
+      </div>
+      }
+
+      }
+    </div>
+
+
+
+
+

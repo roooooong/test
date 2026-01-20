@@ -1,0 +1,51 @@
+.activeCss{
+  color: rgb(255, 255, 255);
+}
+
+.buttonCss{
+  // background-color: rgb(138, 174, 180);
+  background-color: rgb(250, 194, 111);
+  font-size: 16px;
+  // color: white;
+  border-radius: 10px;
+  height: 35px;
+}
+
+mat-spinner{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5
+}
+
+.overlay{
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+}
+
+.example-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+

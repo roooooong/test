@@ -1,0 +1,32 @@
+<div style=" margin:auto;background-color: #57ad64;width:370px;border: 1px solid #3a8245;border-radius: 10px 10px 0 0;">
+  <p style=" color: rgb(255, 255, 255);text-align: center;font-size: 20px;font-weight: bold">角 色 等 級 計 算 機</p>
+</div>
+
+<div style="position: relative; margin:auto; border: 1px solid #000;
+            padding:10px; width:350px; height: 380px; background-color: #fff4e6;">
+  <button
+    style="position:absolute; width: 60px; right:15px;border-radius: 10px;background-color: #e7700f; color: rgb(255, 255, 255)"
+    (click)="restart()">重置</button>
+  <br>
+  <label style="position:absolute; left:20px;">等級:{{level}}</label>
+  <br><br>
+  <button class="levelChange" (click)="levelup()">升級</button>
+  <button class="levelChange" (click)="leveldown()">降級</button>
+  <br><br>
+  <label style="position:absolute; left:20px;font-weight: bold">攻擊力:{{attack}}</label>
+  <br><br>
+  <label style="position:absolute; left:20px;font-weight: bold">防禦力:{{defense}}</label>
+  <br><br>
+  <p style="position:absolute; left:20px;font-size: 13px;color: red;">註解:角色初始等級為1，初始攻擊/防禦為10，每提升一級<br><br>
+    攻擊+3 防禦力+2，降級則攻擊-3 防禦力-2</p>
+  <br><br><br><br>
+  <label style="color: #257030;font-size: 24px;">-------------------------------------------</label>
+  <br><br>
+  <label style="font-size: 14px;"> 自行輸入等級 : </label><input type="number" [(ngModel)]="changeLevel">
+  <br><br>
+  <button
+    style="width: 120px; border-radius: 10px;position:absolute; right:132px; background-color: #57ad64; color: rgb(255, 255, 255)"
+    (click)="change()">修改等級</button>
+  <br><br>
+
+</div>
